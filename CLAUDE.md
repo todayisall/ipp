@@ -23,6 +23,7 @@ pnpm --filter @ipp/protocol test
 pnpm --filter @ipp/codec test
 pnpm --filter @ipp/client test
 pnpm --filter @ipp/transport-fetch test
+pnpm --filter @ipp/transport-node test
 
 # Watch mode per package (TDD workflow)
 pnpm --filter @ipp/codec test:watch
@@ -43,6 +44,7 @@ packages/
   codec/          @ipp/codec     — Binary parser + serializer (platform-agnostic)
   client/         @ipp/client    — Printer class, builders, transports
   transport-fetch/ @ipp/transport-fetch — Fetch API transport (Node 18+, browsers)
+  transport-node/  @ipp/transport-node  — Node.js http/https transport (Node < 18 compat, TLS control)
   transport-harmony/ @ipp/transport-harmony — HarmonyOS @ohos.net.http transport
 ```
 

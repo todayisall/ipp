@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "pnpm -r --filter=@ipp/protocol --filter=@ipp/codec --filter=@ipp/client --filter=@ipp/transport-fetch --filter=@ipp/transport-harmony build",
+    "build": "pnpm -r --filter=@ipp/protocol --filter=@ipp/codec --filter=@ipp/client --filter=@ipp/transport-fetch --filter=@ipp/transport-harmony --filter=@ipp/transport-node build",
     "test": "pnpm build && vitest run",
     "test:watch": "vitest",
     "lint": "biome check packages",

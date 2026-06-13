@@ -13,4 +13,7 @@ export default defineWorkspace([
   {
     test: { globals: true, environment: 'node', name: 'transport-fetch', include: ['packages/transport-fetch/src/**/*.test.ts'] },
   },
+  {
+    test: { globals: true, environment: 'node', name: 'transport-node',  include: ['packages/transport-node/src/**/*.test.ts'] },
+  },
 ]);

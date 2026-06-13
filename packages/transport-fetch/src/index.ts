@@ -5,6 +5,13 @@ import { IppTransportError } from '@ipp/client';
  * IPP transport using the standard Fetch API.
  * Works in Node.js 18+, Deno, Bun, and modern browsers.
  * Converts ipp:// → http:// and ipps:// → https:// automatically.
+ *
+ * TLS notes (IPPS / ipps://):
+ * - The Fetch API delegates TLS verification to the underlying runtime.
+ * - `opts.tls.rejectUnauthorized` and `opts.tls.ca` are NOT supported by
+ *   FetchTransport — the Fetch specification has no equivalent.
+ * - For self-signed certs or custom CAs use @ipp/transport-node instead,
+ *   which exposes Node.js https.request options directly.
  */
 export class FetchTransport implements ITransport {
   async send(url: string, body: Uint8Array, opts?: TransportOptions): Promise<Uint8Array> {
