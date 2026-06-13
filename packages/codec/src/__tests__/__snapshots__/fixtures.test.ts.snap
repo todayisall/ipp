@@ -1,0 +1,446 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`fixture: collection-media-col.bin > parses to the expected structure (snapshot) 1`] = `
+{
+  "data": undefined,
+  "groups": [
+    {
+      "attributes": [
+        {
+          "name": "attributes-charset",
+          "values": [
+            {
+              "tag": "charset",
+              "value": "utf-8",
+            },
+          ],
+        },
+        {
+          "name": "attributes-natural-language",
+          "values": [
+            {
+              "tag": "naturalLanguage",
+              "value": "en",
+            },
+          ],
+        },
+        {
+          "name": "printer-uri",
+          "values": [
+            {
+              "tag": "uri",
+              "value": "ipp://printer.local:631/ipp",
+            },
+          ],
+        },
+      ],
+      "tag": "operation-attributes-tag",
+    },
+    {
+      "attributes": [
+        {
+          "name": "media-col",
+          "values": [
+            {
+              "tag": "collection",
+              "value": {
+                "media-size": {
+                  "tag": "collection",
+                  "value": {
+                    "x-dimension": {
+                      "tag": "integer",
+                      "value": 21000,
+                    },
+                    "y-dimension": {
+                      "tag": "integer",
+                      "value": 29700,
+                    },
+                  },
+                },
+                "media-source": {
+                  "tag": "keyword",
+                  "value": "main",
+                },
+                "media-type": {
+                  "tag": "keyword",
+                  "value": "stationery",
+                },
+              },
+            },
+          ],
+        },
+        {
+          "name": "copies",
+          "values": [
+            {
+              "tag": "integer",
+              "value": 1,
+            },
+          ],
+        },
+      ],
+      "tag": "job-attributes-tag",
+    },
+  ],
+  "operation": "Print-Job",
+  "requestId": 7,
+  "statusCode": "successful-ok-conflicting-attributes",
+  "version": "2.0",
+}
+`;
+
+exports[`fixture: get-printer-attrs-req.bin > parses to the expected structure (snapshot) 1`] = `
+{
+  "data": undefined,
+  "groups": [
+    {
+      "attributes": [
+        {
+          "name": "attributes-charset",
+          "values": [
+            {
+              "tag": "charset",
+              "value": "utf-8",
+            },
+          ],
+        },
+        {
+          "name": "attributes-natural-language",
+          "values": [
+            {
+              "tag": "naturalLanguage",
+              "value": "en-us",
+            },
+          ],
+        },
+        {
+          "name": "printer-uri",
+          "values": [
+            {
+              "tag": "uri",
+              "value": "ipp://printer.local:631/ipp/printer",
+            },
+          ],
+        },
+        {
+          "name": "requested-attributes",
+          "values": [
+            {
+              "tag": "keyword",
+              "value": "printer-state",
+            },
+            {
+              "tag": "keyword",
+              "value": "printer-state-reasons",
+            },
+            {
+              "tag": "keyword",
+              "value": "printer-make-and-model",
+            },
+            {
+              "tag": "keyword",
+              "value": "media-ready",
+            },
+            {
+              "tag": "keyword",
+              "value": "copies-supported",
+            },
+          ],
+        },
+      ],
+      "tag": "operation-attributes-tag",
+    },
+  ],
+  "operation": "Get-Printer-Attributes",
+  "requestId": 1,
+  "statusCode": "0x000b",
+  "version": "1.1",
+}
+`;
+
+exports[`fixture: get-printer-attrs-res.bin > parses to the expected structure (snapshot) 1`] = `
+{
+  "data": undefined,
+  "groups": [
+    {
+      "attributes": [
+        {
+          "name": "attributes-charset",
+          "values": [
+            {
+              "tag": "charset",
+              "value": "utf-8",
+            },
+          ],
+        },
+        {
+          "name": "attributes-natural-language",
+          "values": [
+            {
+              "tag": "naturalLanguage",
+              "value": "en-us",
+            },
+          ],
+        },
+        {
+          "name": "status-message",
+          "values": [
+            {
+              "tag": "textWithoutLanguage",
+              "value": "successful-ok",
+            },
+          ],
+        },
+      ],
+      "tag": "operation-attributes-tag",
+    },
+    {
+      "attributes": [
+        {
+          "name": "printer-state",
+          "values": [
+            {
+              "tag": "enum",
+              "value": "idle",
+            },
+          ],
+        },
+        {
+          "name": "printer-state-reasons",
+          "values": [
+            {
+              "tag": "keyword",
+              "value": "none",
+            },
+          ],
+        },
+        {
+          "name": "printer-make-and-model",
+          "values": [
+            {
+              "tag": "textWithoutLanguage",
+              "value": "HP LaserJet Pro MFP M428",
+            },
+          ],
+        },
+        {
+          "name": "media-ready",
+          "values": [
+            {
+              "tag": "keyword",
+              "value": "iso_a4_210x297mm",
+            },
+            {
+              "tag": "keyword",
+              "value": "na_letter_8.5x11in",
+            },
+          ],
+        },
+        {
+          "name": "copies-supported",
+          "values": [
+            {
+              "tag": "rangeOfInteger",
+              "value": [
+                1,
+                99,
+              ],
+            },
+          ],
+        },
+      ],
+      "tag": "printer-attributes-tag",
+    },
+  ],
+  "requestId": 1,
+  "statusCode": "successful-ok",
+  "version": "1.1",
+}
+`;
+
+exports[`fixture: print-job-req.bin > parses to the expected structure (snapshot) 1`] = `
+{
+  "data": "<Uint8Array 15b: 255044462d312e340a25e2e3cfd30a>",
+  "groups": [
+    {
+      "attributes": [
+        {
+          "name": "attributes-charset",
+          "values": [
+            {
+              "tag": "charset",
+              "value": "utf-8",
+            },
+          ],
+        },
+        {
+          "name": "attributes-natural-language",
+          "values": [
+            {
+              "tag": "naturalLanguage",
+              "value": "en-us",
+            },
+          ],
+        },
+        {
+          "name": "printer-uri",
+          "values": [
+            {
+              "tag": "uri",
+              "value": "ipp://printer.local:631/ipp/printer",
+            },
+          ],
+        },
+        {
+          "name": "requesting-user-name",
+          "values": [
+            {
+              "tag": "nameWithoutLanguage",
+              "value": "alice",
+            },
+          ],
+        },
+        {
+          "name": "job-name",
+          "values": [
+            {
+              "tag": "nameWithoutLanguage",
+              "value": "Q4 Report",
+            },
+          ],
+        },
+        {
+          "name": "document-format",
+          "values": [
+            {
+              "tag": "mimeMediaType",
+              "value": "application/pdf",
+            },
+          ],
+        },
+        {
+          "name": "ipp-attribute-fidelity",
+          "values": [
+            {
+              "tag": "boolean",
+              "value": true,
+            },
+          ],
+        },
+      ],
+      "tag": "operation-attributes-tag",
+    },
+    {
+      "attributes": [
+        {
+          "name": "copies",
+          "values": [
+            {
+              "tag": "integer",
+              "value": 2,
+            },
+          ],
+        },
+        {
+          "name": "sides",
+          "values": [
+            {
+              "tag": "keyword",
+              "value": "two-sided-long-edge",
+            },
+          ],
+        },
+      ],
+      "tag": "job-attributes-tag",
+    },
+  ],
+  "operation": "Print-Job",
+  "requestId": 42,
+  "statusCode": "successful-ok-conflicting-attributes",
+  "version": "2.0",
+}
+`;
+
+exports[`fixture: print-job-res.bin > parses to the expected structure (snapshot) 1`] = `
+{
+  "data": undefined,
+  "groups": [
+    {
+      "attributes": [
+        {
+          "name": "attributes-charset",
+          "values": [
+            {
+              "tag": "charset",
+              "value": "utf-8",
+            },
+          ],
+        },
+        {
+          "name": "attributes-natural-language",
+          "values": [
+            {
+              "tag": "naturalLanguage",
+              "value": "en-us",
+            },
+          ],
+        },
+        {
+          "name": "status-message",
+          "values": [
+            {
+              "tag": "textWithoutLanguage",
+              "value": "successful-ok",
+            },
+          ],
+        },
+      ],
+      "tag": "operation-attributes-tag",
+    },
+    {
+      "attributes": [
+        {
+          "name": "job-id",
+          "values": [
+            {
+              "tag": "integer",
+              "value": 7,
+            },
+          ],
+        },
+        {
+          "name": "job-uri",
+          "values": [
+            {
+              "tag": "uri",
+              "value": "ipp://printer.local:631/jobs/7",
+            },
+          ],
+        },
+        {
+          "name": "job-state",
+          "values": [
+            {
+              "tag": "enum",
+              "value": "pending",
+            },
+          ],
+        },
+        {
+          "name": "job-state-reasons",
+          "values": [
+            {
+              "tag": "keyword",
+              "value": "job-queued",
+            },
+          ],
+        },
+      ],
+      "tag": "job-attributes-tag",
+    },
+  ],
+  "requestId": 42,
+  "statusCode": "successful-ok",
+  "version": "2.0",
+}
+`;

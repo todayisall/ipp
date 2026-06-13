@@ -47,7 +47,7 @@
 - [x] T29 `serializer.ts`：collection 序列化 + 测试
 - [x] T30 `roundtrip.test.ts`：`parse(serialize(msg))` 往返测试（覆盖于 parser/serializer 测试中）
 - [x] T31 `codec.property.test.ts`：`fast-check` 属性测试（1000 轮往返无损）
-- [ ] T32 `fixtures/`：接入真实 `.bin` fixture 文件 + 快照测试
+- [x] T32 `fixtures/`：接入真实 `.bin` fixture 文件 + 快照测试
 
 ---
 
@@ -56,7 +56,7 @@
 - [x] T33 `errors.ts`：`IppError` / `IppTransportError` / `IppOperationError`
 - [x] T34 `transport.ts`：`ITransport` 接口 + `TransportOptions`
 - [x] T35 `@ipp/transport-fetch`：`FetchTransport` + 测试（mock fetch）
-- [ ] T36 `@ipp/transport-node`（可选，Node < 18 兼容）：`NodeTransport`
+- [x] T36 `@ipp/transport-node`（可选，Node < 18 兼容）：`NodeTransport`
 - [x] T37 `builders/common.ts`：`generateRequestId()` / `buildOperationGroup()`
 - [x] T38 `builders/get-printer-attributes.ts`：`buildGetPrinterAttributes`
 - [x] T39 `builders/print-job.ts`：`buildPrintJob`
@@ -75,7 +75,7 @@
 - [x] T47 RFC 3995 订阅：`builders/subscriptions.ts`（Create/Get/Renew/Cancel Printer & Job subscriptions）
 - [x] T48 RFC 3995 订阅：`printer.ts` 增加 `subscribe` / `subscribeToJob` / `getSubscriptions` / `renewSubscription` / `cancelSubscription` 方法
 - [x] T49 PWG 5100.13：`buildValidateJob` + `buildCloseJob`（在 builders/other.ts）+ Printer 高层方法
-- [ ] T50 IPPS TLS：`NodeTransport` 增加 `rejectUnauthorized` / `ca` 选项；`FetchTransport` 文档说明
+- [x] T50 IPPS TLS：`NodeTransport` 增加 `rejectUnauthorized` / `ca` 选项；`FetchTransport` 文档说明
 
 ---
 
@@ -94,4 +94,4 @@
 
 ---
 
-*当前进度：46 / 55 tasks*
+*当前进度：49 / 55 tasks*
