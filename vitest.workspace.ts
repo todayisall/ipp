@@ -16,4 +16,7 @@ export default defineWorkspace([
   {
     test: { globals: true, environment: 'node', name: 'transport-node',  include: ['packages/transport-node/src/**/*.test.ts'] },
   },
+  {
+    test: { globals: true, environment: 'node', name: 'server',          include: ['packages/server/src/**/*.test.ts'] },
+  },
 ]);

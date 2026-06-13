@@ -16,6 +16,18 @@ export type {
   NotifyEvent,
   SubscriptionSpec,
 } from './builders/subscriptions.js';
+// Builder functions (useful for constructing requests without a Printer instance)
+export { buildGetPrinterAttributes } from './builders/get-printer-attributes.js';
+export { buildPrintJob } from './builders/print-job.js';
+export {
+  buildCancelJob, buildGetJobAttributes, buildGetJobs, buildPrintUri,
+  buildIdentifyPrinter, buildValidateJob, buildCloseJob,
+} from './builders/other.js';
+export {
+  buildCreatePrinterSubscriptions, buildCreateJobSubscriptions,
+  buildGetSubscriptions, buildRenewSubscription, buildCancelSubscription,
+} from './builders/subscriptions.js';
+export { buildOperationGroup, generateRequestId, DEFAULT_PRINTER_OPTIONS } from './builders/common.js';
 // Re-export protocol and codec for convenience
 export * from '@ipp/protocol';
 export { parse, serialize, IppParseError, IppSerializeError } from '@ipp/codec';
