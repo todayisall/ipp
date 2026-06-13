@@ -1,0 +1,24 @@
+# Editor / OS
+.idea
+.DS_Store
+*.swp
+
+# Dev scratch
+scratch.js
+
+# Dependencies
+node_modules/
+
+# Build artifacts — never commit generated dist files
+packages/*/dist/
+
+# TypeScript incremental build cache
+*.tsbuildinfo
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Env secrets
+.env
+.env.local
